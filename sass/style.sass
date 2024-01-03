@@ -1,0 +1,88 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+@import 'header'
+@import 'footer'
+
+.main
+    position: relative
+    z-index: 1
+    .container
+        height: 100vh
+        min-height: 600px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    &__text
+        font-size: 25px
+
+.second
+    text-align: right
+    &__img
+        width: 500px
+        max-width: 31%
+        margin-right: 10%
+
+.third
+    background-color: #efefef
+    align-items: end
+    .container
+        padding: 130px
+
+    h2
+        max-width: 50%
+        margin-bottom: 15px
+
+    p
+        max-width: 580px
+        letter-spacing: -1px
+        font-size: 30px
+
+    &__bg
+        position: absolute
+        top: 0
+        right: 0
+        max-width: 90%
+        height: 100%
+        z-index: -1
+        object-fit: contain
+        object-position: center center
+        mix-blend-mode: darken
+
+.by
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 125px
+
+    h2
+        font-size: 78px
+        line-height: 130%
+        margin-bottom: 60px
+
+    span
+        font-size: 149px !important
+
+    .h2
+        width: 980px
+        max-width: 90%
+        margin: 0 0 0 auto
+        text-align: right
+
+.designer
+    text-align: center
+    justify-content: space-evenly
+    &-item
+        width: 730px
+        height: 730px
+        border-radius: 50%
+        border: 10px solid #2ba542
+        color: #2ba542
+        font-size: 72px
+        line-height: 120%
+        font-weight: bold
+        display: flex
+        align-items: center
+        justify-content: center
+        letter-spacing: -5px
