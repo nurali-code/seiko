@@ -5,15 +5,17 @@
 @import 'slick'
 @import 'footer'
 
+.fx-col
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
 .main
     position: relative
     z-index: 1
-    .container
-        height: 100vh
-        min-height: 600px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+    height: 100vh
+    min-height: 600px
+    max-height: 1080px
 
     &__text
         font-size: 25px
@@ -125,7 +127,7 @@
         justify-content: flex-end
         p
             color: #8d8888
-            max-width: 39%
+            max-width: 38%
             letter-spacing: -1px
             font-size: 40px
             line-height: 110%

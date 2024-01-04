@@ -1,5 +1,19 @@
 .header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 9999
+    transition: all ease .3s
+    &.fixed
+        // background-color: rgba(#efefef, .3)
+        backdrop-filter: blur(11px)
+        .container
+            padding: 20px 60px
+
     .container
+        transition: all ease .3s
+        padding: 40px 60px
 
     .logo
         display: block
@@ -14,6 +28,25 @@
             text-transform: uppercase
             font-size: 22px
             padding: 5px 17px
+            position: relative
+            z-index: 1
+            &::after
+                transition: all ease .4s
+                content: ''
+                display: block
+                width: calc( 100% - 30px )
+                height: 1px
+                left: 15px
+                position: absolute
+                bottom: 0
+                background-color: #000
+                transform: scaleX(0)
+                transform-origin: 0 0
+
+            &:hover
+                opacity: 1
+                &::after
+                    transform: scaleX(1)
 
     .btnMenu
         width: 45px

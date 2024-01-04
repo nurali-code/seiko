@@ -4,37 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1300">
-    <title>SEICO</title>
+    <title>SEIKO</title>
     <meta name="theme-color" content="#9b35c1">
     <link type="image/svg" rel="shortcut icon" href="/favicon.svg">
 
 
-    <link rel="stylesheet" href="./css/style.css?ver=1234">
+    <link rel="stylesheet" href="./css/style.css?ver=45678">
 
 </head>
 
 <body>
-    <main class="main">
-        <div class="container">
-            <header class="header wrap">
-                <a href="#" class="logo"><img src="img/seiko.png" alt="seiko"></a>
-                <nav class="wrap">
-                    <a href="#">главная</a>
-                    <a href="#">модель</a>
-                    <a href="#">история</a>
-                    <a href="#">seiko co.</a>
-                </nav>
-                <button class="btnMenu"></button>
-            </header>
-
-            <video src="#" autoplay muted poster="./img/main.jpg"></video>
-
-            <p class="wrap main__text">
-                <span>セイコーホールディングス株式会社</span>
-                <span>Seiko Holdings Corporation</span>
-            </p>
-
+    <header class="header">
+        <div class="container wrap">
+            <a href="#main" class="logo"><img src="img/seiko.png" alt="seiko"></a>
+            <nav class="wrap">
+                <a href="#main">главная</a>
+                <a href="#model">модель</a>
+                <a href="#story">история</a>
+                <a href="#company">seiko co.</a>
+            </nav>
+            <button class="btnMenu"></button>
         </div>
+    </header>
+
+    <main class="main fx-col" id="main">
+        <video src="#" autoplay muted poster="./img/main.jpg"></video>
+        <p class="wrap main__text container">
+            <span>セイコーホールディングス株式会社</span>
+            <span>Seiko Holdings Corporation</span>
+        </p>
     </main>
 
     <div class="section second wrap">
@@ -42,7 +40,7 @@
         <video src="#" autoplay muted poster="./img/bg.jpg"></video>
     </div>
 
-    <section class="third wrap">
+    <section class="third fx-col" id="model">
         <div class="container">
             <h2>SEIKO Discus Burger</h2>
             <p>
@@ -54,7 +52,7 @@
         <img src="img/bg-4.jpg" class="third__bg" alt="bg">
     </section>
 
-    <section class="by container">
+    <section class="by container" id="story">
         <h2>
             Работа <br>
             <span>Tomoko Tomita</span> <br>
@@ -106,7 +104,7 @@
         <img src="img/bg-5.jpg" class="burger__bg" alt="bg">
     </section>
 
-    <div class="section slider">
+    <div class="section slider" id="company">
         <div class="slider-item last">
             <div class="container wrap">
                 <p>
@@ -149,14 +147,14 @@
     <footer class="footer">
         <p class="container wrap footer__text">
             <span>セイコーホールディングス株式会社</span>
-            <img src="img/seiko.png" alt="seiko">
+            <a href="#main" class="footer__logo"><img src="img/seiko.png" alt="seiko"></a>
             <span>Seiko Holdings Corporation</span>
         </p>
     </footer>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/script.js?ver=1234"></script>
+    <script src="./js/script.js?ver=45678"></script>
 
 </body>
 
