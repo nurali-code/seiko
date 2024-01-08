@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         var header = $('header');
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 200) {
             header.addClass('fixed');
         } else { header.removeClass('fixed'); }
     });
